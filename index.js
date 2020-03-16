@@ -19,7 +19,13 @@ app.get('/api/ex/:value', (req, res) => {
             return res.status(500).json({ type: 'error', message: err.message });
         }
 
-        res.json(JSON.parse(body));
+        if (body == '') {
+            res.json([]);
+        } else {
+            res.json(JSON.parse(body));
+        }
+        
+               
         }
     )
 });
