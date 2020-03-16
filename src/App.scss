@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+
+  .badInput {
+    border-color:red;
+  }
+
+  label {
+    display:inline-block;
+    margin-right:5px;
+  }
+
+  input {
+    width:180px;
+    display:inline-block;
+    margin-right:5px;
+  }
+
+  button {
+    vertical-align:top;
+  }
+
+  .error {
+    color:red;
+  }
+}

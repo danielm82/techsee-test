@@ -1,0 +1,17 @@
+.TesterTable {
+  text-align: center;
+
+  table {
+    width:1000px;
+    margin:0 auto;
+
+    td {
+      text-align:left;
+    }
+
+    th {
+      text-align:left;
+      cursor:pointer;
+    }
+  }
+}
