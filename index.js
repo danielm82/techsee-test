@@ -16,7 +16,7 @@ app.get('/api/ex/:value', (req, res) => {
         { url: `https://test-api.techsee.me/api/ex/${value}` },
         (error, response, body) => {
         if (error || response.statusCode !== 200) {
-            return res.status(500).json({ type: 'error', message: err.message });
+            return res.status(500).json({ type: 'error', message: error.message });
         }
 
         if (body == '') {
